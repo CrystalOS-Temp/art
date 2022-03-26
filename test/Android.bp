@@ -413,7 +413,6 @@ art_cc_defaults {
     ],
     shared_libs: [
         "libbase",
-        "libbacktrace",
         "liblog",
     ],
     target: {
@@ -601,7 +600,6 @@ cc_defaults {
     name: "libartagent-defaults",
     defaults: ["art_test_internal_library_defaults"],
     shared_libs: [
-        "libbacktrace",
         "libbase",
         "liblog",
         "libnativehelper",
@@ -969,10 +967,10 @@ cc_defaults {
         "common/stack_inspect.cc",
     ],
     shared_libs: [
-        "libbacktrace",
         "libbase",
         "liblog",
         "libnativehelper",
+        "libunwindstack",
     ],
 }
 
