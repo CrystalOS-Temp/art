@@ -103,6 +103,10 @@ java_sdk_library {
         "service/java/com/android/server/art/ArtManagerLocal.java",
     ],
 
+    required: [
+        "libartservice",
+    ],
+
     libs: [
         "art.module.api.annotations.for.system.modules",
     ],
